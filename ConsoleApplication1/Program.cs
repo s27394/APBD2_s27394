@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace ConsoleApplication1
 {
@@ -14,7 +15,9 @@ namespace ConsoleApplication1
       int z = 20;
 
       double averageResult = calculateAverage(arr);
+      int maxResult = findMax(arr);
       Console.WriteLine("calculated avg: " + averageResult);
+      Console.WriteLine("calculated max: " + maxResult);
       
       Console.WriteLine("GOOODINGHT!");
     }
@@ -27,6 +30,11 @@ namespace ConsoleApplication1
         sum += val;
       }
       return (double)sum/(double)arr.Length;
+    }
+
+    public static int findMax(int[] arr)
+    {
+      return arr.Max();
     }
   }
 }

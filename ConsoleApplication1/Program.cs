@@ -11,6 +11,8 @@ namespace ConsoleApplication1
       int x = 10;
       int y = 15;
       int z = 20;
+      
+      Console.WriteLine("GOOODINGHT!");
     }
   }
 }

@@ -32,9 +32,17 @@ namespace ConsoleApplication1
       return (double)sum/(double)arr.Length;
     }
 
-    public static int findMax(int[] arr)
+    public static int findMax(int[] array)
     {
-      return arr.Max();
+      int max = -1;
+      for (int i = 1; i < array.Length; i++)
+      {
+        if (array[i] > max)
+        {
+          max = array[i];
+        }
+      }
+      return max;
     }
   }
 }

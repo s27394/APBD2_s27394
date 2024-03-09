@@ -34,15 +34,15 @@ namespace ConsoleApplication1
 
     public static int findMax(int[] array)
     {
-      int maxVal = -1;
+      int max = -1;
       for (int i = 1; i < array.Length; i++)
       {
-        if (array[i] > maxVal)
+        if (array[i] > max)
         {
-          maxVal = array[i];
+          max = array[i];
         }
       }
-      return maxVal;
+      return max;
     }
   }
 }
